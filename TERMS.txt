@@ -1,0 +1,1 @@
+PIP (Projucer Instant Project) .h file that provides metadata to the Projucer in order to automatically create a project with the correct modules and exporters from a single file. 
