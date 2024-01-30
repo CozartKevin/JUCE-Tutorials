@@ -1,0 +1,6 @@
+
+WARNINGS:
+You should never add, rename, and/or remove source files from JUCE projects inside your native IDE (such as Xcode, Visual Studio). These changes would be overwritten the next time you save the project in Projucer (which re-generates the native IDE projects every time). Instead, always use the Projucer itself to make such changes.
+
+TIPS:
+It is highly recommended and good practice to have your groups follow the structure and names of the folders.
