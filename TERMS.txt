@@ -1,1 +1,2 @@
-PIP (Projucer Instant Project) .h file that provides metadata to the Projucer in order to automatically create a project with the correct modules and exporters from a single file. 
+PIP - (Projucer Instant Project) .h file that provides metadata to the Projucer in order to automatically create a project with the correct modules and exporters from a single file. 
+Groups - If you create a file in a group in Projucer, you will also be asked in which folder to save the file. With this, it is possible to have a folder structure that is different from the group structure. However, it is highly recommended and good practice to have your groups follow the structure and names of the folders.
