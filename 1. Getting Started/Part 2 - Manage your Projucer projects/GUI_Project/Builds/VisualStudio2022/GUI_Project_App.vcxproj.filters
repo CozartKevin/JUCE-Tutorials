@@ -38,6 +38,9 @@
     <Filter Include="JUCE Modules\juce_core\network">
       <UniqueIdentifier>{0F70B1A9-BB50-23F5-2AE7-F95E51A00389}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JUCE Modules\juce_core\serialisation">
+      <UniqueIdentifier>{D4D9BC01-0DED-2577-4B99-2FF7B9C7EF8A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JUCE Modules\juce_core\streams">
       <UniqueIdentifier>{D4C8DC40-2CD2-04B6-05D0-1E7A88841390}</UniqueIdentifier>
     </Filter>
@@ -158,6 +161,9 @@
     <Filter Include="JUCE Modules\juce_gui_basics\desktop">
       <UniqueIdentifier>{B331BC33-9770-3DB5-73F2-BC2469ECCF7F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="JUCE Modules\juce_gui_basics\detail">
+      <UniqueIdentifier>{3B09E947-B78C-1758-E072-7FD67F8DCB00}</UniqueIdentifier>
+    </Filter>
     <Filter Include="JUCE Modules\juce_gui_basics\drawables">
       <UniqueIdentifier>{46A17AC9-0BFF-B5CE-26D6-B9D1992C88AC}</UniqueIdentifier>
     </Filter>
@@ -229,6 +235,12 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_DynamicObject.cpp">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_Enumerate_test.cpp">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_FixedSizeFunction_test.cpp">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_HashMap_test.cpp">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClCompile>
@@ -292,6 +304,12 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSON.cpp">
       <Filter>JUCE Modules\juce_core\javascript</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSONSerialisation_test.cpp">
+      <Filter>JUCE Modules\juce_core\javascript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSONUtils.cpp">
+      <Filter>JUCE Modules\juce_core\javascript</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\logging\juce_FileLogger.cpp">
       <Filter>JUCE Modules\juce_core\logging</Filter>
     </ClCompile>
@@ -302,6 +320,9 @@
       <Filter>JUCE Modules\juce_core\maths</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\maths\juce_Expression.cpp">
+      <Filter>JUCE Modules\juce_core\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\maths\juce_MathsFunctions_test.cpp">
       <Filter>JUCE Modules\juce_core\maths</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\maths\juce_Random.cpp">
@@ -316,10 +337,16 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_ConsoleApplication.cpp">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_EnumHelpers_test.cpp">
+      <Filter>JUCE Modules\juce_core\misc</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_Result.cpp">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_RuntimePermissions.cpp">
+      <Filter>JUCE Modules\juce_core\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_ScopeGuard.cpp">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_Uuid.cpp">
@@ -349,7 +376,28 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_android_Threads.cpp">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_AndroidDocument_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_CommonFile_linux.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_curl_Network.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Files_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Files_linux.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Files_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Files_windows.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_JNIHelpers_android.cpp">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_linux_CommonFile.cpp">
@@ -382,7 +430,76 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_mac_Threads.mm">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Misc_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_NamedPipe_posix.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Network_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Network_curl.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Network_linux.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Network_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Network_windows.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_ObjCHelpers_mac_test.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_PlatformTimer_generic.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_PlatformTimer_windows.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_posix_NamedPipe.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Process_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Registry_windows.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_RuntimePermissions_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Strings_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SystemStats_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SystemStats_linux.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SystemStats_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SystemStats_wasm.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SystemStats_windows.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Threads_android.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Threads_linux.cpp">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Threads_mac.mm">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_Threads_windows.cpp">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_wasm_SystemStats.cpp">
@@ -604,6 +721,9 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\broadcasters\juce_ChangeBroadcaster.cpp">
       <Filter>JUCE Modules\juce_events\broadcasters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\broadcasters\juce_LockingAsyncUpdater.cpp">
+      <Filter>JUCE Modules\juce_events\broadcasters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\interprocess\juce_ConnectedChildProcess.cpp">
       <Filter>JUCE Modules\juce_events\interprocess</Filter>
     </ClCompile>
@@ -640,6 +760,21 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_mac_MessageManager.mm">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_MessageManager_ios.mm">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_MessageManager_mac.mm">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_Messaging_android.cpp">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_Messaging_linux.cpp">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_Messaging_windows.cpp">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_ScopedLowPowerModeDisabler.cpp">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
@@ -647,6 +782,9 @@
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_win32_WinRTWrapper.cpp">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_WinRTWrapper_windows.cpp">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\timers\juce_MultiTimer.cpp">
@@ -937,7 +1075,49 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_android_IconHelpers.cpp">
       <Filter>JUCE Modules\juce_graphics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_CoreGraphicsContext_mac.mm">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Direct2DGraphicsContext_windows.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_DirectWriteTypeface_windows.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_DirectWriteTypeLayout_windows.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Fonts_android.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Fonts_freetype.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Fonts_linux.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Fonts_mac.mm">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Fonts_windows.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_freetype_Fonts.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_GraphicsContext_android.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_IconHelpers_android.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_IconHelpers_linux.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_IconHelpers_mac.cpp">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_IconHelpers_windows.cpp">
       <Filter>JUCE Modules\juce_graphics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_linux_Fonts.cpp">
@@ -1042,6 +1222,9 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\desktop\juce_Displays.cpp">
       <Filter>JUCE Modules\juce_gui_basics\desktop</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_AccessibilityHelpers.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\drawables\juce_Drawable.cpp">
       <Filter>JUCE Modules\juce_gui_basics\drawables</Filter>
     </ClCompile>
@@ -1113,6 +1296,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\keyboard\juce_ModifierKeys.cpp">
       <Filter>JUCE Modules\juce_gui_basics\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\layout\juce_BorderedComponentBoundsConstrainer.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\layout</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\layout\juce_ComponentAnimator.cpp">
       <Filter>JUCE Modules\juce_gui_basics\layout</Filter>
@@ -1237,6 +1423,27 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\mouse\juce_MouseListener.cpp">
       <Filter>JUCE Modules\juce_gui_basics\mouse</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_Accessibility.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_Accessibility_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_Accessibility_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_Accessibility_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_Accessibility_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_AccessibilityElement_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_AccessibilitySharedCode_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_AccessibilityTextHelpers_test.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
     </ClCompile>
@@ -1276,6 +1483,33 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_android_Windowing.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ContentSharer_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ContentSharer_ios.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_DragAndDrop_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_DragAndDrop_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_FileChooser_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_FileChooser_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_FileChooser_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_FileChooser_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_FileChooser_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ios_ContentSharer.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
@@ -1309,6 +1543,36 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_mac_Windowing.mm">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_MainMenu_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_MouseCursor_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeMessageBox_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeMessageBox_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeMessageBox_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeMessageBox_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeMessageBox_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NSViewComponentPeer_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ScopedDPIAwarenessDisabler.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_UIViewComponentPeer_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_win32_DragAndDrop.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
@@ -1316,6 +1580,45 @@
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_win32_Windowing.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_Windowing_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_Windowing_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_Windowing_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_Windowing_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_Windowing_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowsHooks_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowUtils_android.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowUtils_ios.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowUtils_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowUtils_mac.mm">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowUtils_windows.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_XSymbols_linux.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_XWindowSystem_linux.cpp">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\positioning\juce_MarkerList.cpp">
@@ -1417,7 +1720,16 @@
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_DocumentWindow.cpp">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_MessageBoxOptions.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_NativeMessageBox.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ResizableWindow.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ScopedMessageBox.cpp">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ThreadWithProgressWindow.cpp">
@@ -1430,6 +1742,9 @@
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_VBlankAttachement.cpp">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_VBlankAttachment.cpp">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\juce_gui_basics.cpp">
@@ -1476,6 +1791,12 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_ElementComparator.h">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_Enumerate.h">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_FixedSizeFunction.h">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_HashMap.h">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
@@ -1507,6 +1828,9 @@
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_SortedSet.h">
+      <Filter>JUCE Modules\juce_core\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_Span.h">
       <Filter>JUCE Modules\juce_core\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\containers\juce_SparseSet.h">
@@ -1555,6 +1879,12 @@
       <Filter>JUCE Modules\juce_core\javascript</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSON.h">
+      <Filter>JUCE Modules\juce_core\javascript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSONSerialisation.h">
+      <Filter>JUCE Modules\juce_core\javascript</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\javascript\juce_JSONUtils.h">
       <Filter>JUCE Modules\juce_core\javascript</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\logging\juce_FileLogger.h">
@@ -1635,6 +1965,9 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_ConsoleApplication.h">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_EnumHelpers.h">
+      <Filter>JUCE Modules\juce_core\misc</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_Functional.h">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClInclude>
@@ -1642,6 +1975,9 @@
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_RuntimePermissions.h">
+      <Filter>JUCE Modules\juce_core\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_ScopeGuard.h">
       <Filter>JUCE Modules\juce_core\misc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\misc\juce_Uuid.h">
@@ -1656,7 +1992,19 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_BasicNativeHeaders.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_CFHelpers_mac.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_ComSmartPtr_windows.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_intel_SharedCode.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_IPAddress_posix.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_JNIHelpers_android.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_mac_CFHelpers.h">
@@ -1668,10 +2016,25 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_native_ThreadPriorities.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_ObjCHelpers_mac.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_PlatformTimerListener.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_posix_IPAddress.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_posix_SharedCode.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SharedCode_intel.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_SharedCode_posix.h">
+      <Filter>JUCE Modules\juce_core\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_ThreadPriorities_native.h">
       <Filter>JUCE Modules\juce_core\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\native\juce_win32_ComSmartPtr.h">
@@ -1694,6 +2057,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\network\juce_WebInputStream.h">
       <Filter>JUCE Modules\juce_core\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\serialisation\juce_Serialisation.h">
+      <Filter>JUCE Modules\juce_core\serialisation</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_core\streams\juce_AndroidDocumentInputSource.h">
       <Filter>JUCE Modules\juce_core\streams</Filter>
@@ -1947,6 +2313,9 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\broadcasters\juce_ChangeListener.h">
       <Filter>JUCE Modules\juce_events\broadcasters</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\broadcasters\juce_LockingAsyncUpdater.h">
+      <Filter>JUCE Modules\juce_events\broadcasters</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\interprocess\juce_ConnectedChildProcess.h">
       <Filter>JUCE Modules\juce_events\interprocess</Filter>
     </ClInclude>
@@ -1986,13 +2355,28 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\messages\juce_NotificationType.h">
       <Filter>JUCE Modules\juce_events\messages</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_EventLoop_linux.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_EventLoopInternal_linux.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_HiddenMessageWindow_windows.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_linux_EventLoop.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_linux_EventLoopInternal.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_MessageQueue_mac.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_osx_MessageQueue.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_RunningInUnity.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_ScopedLowPowerModeDisabler.h">
@@ -2002,6 +2386,9 @@
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_win32_WinRTWrapper.h">
+      <Filter>JUCE Modules\juce_events\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\native\juce_WinRTWrapper_windows.h">
       <Filter>JUCE Modules\juce_events\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_events\timers\juce_MultiTimer.h">
@@ -2172,6 +2559,15 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\images\juce_ScaledImage.h">
       <Filter>JUCE Modules\juce_graphics\images</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_CoreGraphicsContext_mac.h">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_CoreGraphicsHelpers_mac.h">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_Direct2DGraphicsContext_windows.h">
+      <Filter>JUCE Modules\juce_graphics\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_graphics\native\juce_mac_CoreGraphicsContext.h">
       <Filter>JUCE Modules\juce_graphics\native</Filter>
     </ClInclude>
@@ -2289,6 +2685,66 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\desktop\juce_Displays.h">
       <Filter>JUCE Modules\juce_gui_basics\desktop</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_AccessibilityHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_AlertWindowHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ButtonAccessibilityHandler.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ComponentHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_CustomMouseCursorInfo.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_FocusHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_FocusRestorer.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_LookAndFeelHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_MouseInputSourceImpl.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_MouseInputSourceList.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_PointerState.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ScalingHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ScopedContentSharerImpl.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ScopedContentSharerInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ScopedMessageBoxImpl.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ScopedMessageBoxInterface.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ToolbarItemDragAndDropOverlayComponent.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_TopLevelWindowManager.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_ViewportHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\detail\juce_WindowingHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\detail</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\drawables\juce_Drawable.h">
       <Filter>JUCE Modules\juce_gui_basics\drawables</Filter>
     </ClInclude>
@@ -2377,6 +2833,9 @@
       <Filter>JUCE Modules\juce_gui_basics\layout</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\layout\juce_AnimatedPositionBehaviours.h">
+      <Filter>JUCE Modules\juce_gui_basics\layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\layout\juce_BorderedComponentBoundsConstrainer.h">
       <Filter>JUCE Modules\juce_gui_basics\layout</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\layout\juce_ComponentAnimator.h">
@@ -2526,7 +2985,55 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\mouse\juce_TooltipClient.h">
       <Filter>JUCE Modules\juce_gui_basics\mouse</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_AccessibilityElement_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_AccessibilityTextHelpers.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_ComInterfaces_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAExpandCollapseProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAGridItemProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAGridProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAHelpers_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAInvokeProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAProviderBase_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAProviders_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIARangeValueProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIASelectionProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIATextProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAToggleProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIATransformProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAValueProvider_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_UIAWindowProvider_windows.h">
       <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_win32_AccessibilityElement.h">
@@ -2580,6 +3087,9 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_win32_WindowsUIAWrapper.h">
       <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\accessibility\juce_WindowsUIAWrapper_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native\accessibility</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\x11\juce_linux_ScopedWindowAssociation.h">
       <Filter>JUCE Modules\juce_gui_basics\native\x11</Filter>
     </ClInclude>
@@ -2588,6 +3098,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\x11\juce_linux_XWindowSystem.h">
       <Filter>JUCE Modules\juce_gui_basics\native\x11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_CGMetalLayerRenderer_mac.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_mac_CGMetalLayerRenderer.h">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
@@ -2598,10 +3111,31 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_MultiTouchMapper.h">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_NativeModalWrapperComponent_ios.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_PerScreenDisplayLinks_mac.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ScopedDPIAwarenessDisabler.h">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ScopedThreadDPIAwarenessSetter_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_ScopedWindowAssociation_linux.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_win32_ScopedThreadDPIAwarenessSetter.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_WindowsHooks_windows.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_XSymbols_linux.h">
+      <Filter>JUCE Modules\juce_gui_basics\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\native\juce_XWindowSystem_linux.h">
       <Filter>JUCE Modules\juce_gui_basics\native</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\positioning\juce_MarkerList.h">
@@ -2715,6 +3249,9 @@
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ResizableWindow.h">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ScopedMessageBox.h">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_ThreadWithProgressWindow.h">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
@@ -2725,6 +3262,12 @@
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_VBlankAttachement.h">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_VBlankAttachment.h">
+      <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\windows\juce_WindowUtils.h">
       <Filter>JUCE Modules\juce_gui_basics\windows</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\..\..\Juice Library\modules\juce_gui_basics\juce_gui_basics.h">
