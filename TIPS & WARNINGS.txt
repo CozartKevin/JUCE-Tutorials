@@ -1,6 +1,9 @@
 
 WARNINGS:
-You should never add, rename, and/or remove source files from JUCE projects inside your native IDE (such as Xcode, Visual Studio). These changes would be overwritten the next time you save the project in Projucer (which re-generates the native IDE projects every time). Instead, always use the Projucer itself to make such changes.
+Project file warning - You should never add, rename, and/or remove source files from JUCE projects inside your native IDE (such as Xcode, Visual Studio). These changes would be overwritten the next time you save the project in Projucer (which re-generates the native IDE projects every time). Instead, always use the Projucer itself to make such changes.
+
+Module warning - Most JUCE modules require other JUCE modules to properly compile. If you ever remove a module on which other modules of your project depend on, then the Projucer will highlight the now "broken" modules in red. You must then either remove the "broken" modules or add the missing modules
+
 
 TIPS:
 It is highly recommended and good practice to have your groups follow the structure and names of the folders.
