@@ -1,15 +1,32 @@
-I've created a new GUI project here as suggested by the tutorial documentation. 
+# Projucer Tutorials - Part 1: Getting Started with the Projucer
 
-Target IDE is Visual Studio 2022.
+## Summary
 
-I was successful in launching the project via the launch button as per the directions. 
+These notes document the initial steps taken in "Part 1 - Getting Started with the Projucer." The focus is on creating a new GUI project, launching it in Visual Studio 2022, and exploring project files.
 
-Was able to open via .jucer file
+## Key Points
 
-Was not able to find any PIP files so I created a generic PIP file so that I could see what it looked like.  It is basically just a generic .h file that has project setup information. 
+- **New GUI Project:**
+  - Created a new GUI project as suggested by the tutorial documentation.
 
-Created Terms doc in main to track this kinds of new information
+- **Target IDE:**
+  - Set the target IDE to Visual Studio 2022.
 
-(Website states:  These are essentially header files with the usual .h extension that provide metadata to the Projucer in order to automatically create a project with the correct modules and exporters from a single file.)
+- **Project Launch:**
+  - Successfully launched the project using the launch button following the provided directions.
 
-GUI_Project files moved to Part 2 for the continuation of the tutorial. 
+- **Opening via .jucer File:**
+  - Managed to open the project using the .jucer file.
+
+- **PIP File Creation:**
+  - Couldn't find any PIP files, so created a generic PIP file to understand its structure. It is essentially a generic .h file with project setup information.
+  
+- **Documentation Tracking:**
+  - Created a "Terms" document in the main folder to track new information, especially related to PIP files.
+  
+- **Understanding PIP Files:**
+  - Referenced the website, which states that PIP files are header files with the .h extension. They provide metadata to the Projucer, enabling the automatic creation of a project with the correct modules and exporters from a single file.
+
+- **Project Continuation:**
+  - Moved GUI_Project files to Part 2 for the continuation of the tutorial. (Note: GUI_Project files will be continued in Part 2)
+
