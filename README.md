@@ -1,2 +1,2 @@
 # JUCE Tutorials
- Progression of learning JUCE using the Juce.com/learn/tutorials widgets
+ Progression of learning JUCE framework using the Juce.com/learn/tutorials page
