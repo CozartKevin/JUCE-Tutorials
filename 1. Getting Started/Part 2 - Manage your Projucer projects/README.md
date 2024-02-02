@@ -1,17 +1,29 @@
-Will not be creating a new Projucer projects, but have copied over the current GUI_Project over from Part 1.
+# Projucer Tutorials - Part 2: Manage Your Projucer Projects
 
-Reviewed how to open projects
+## Summary
 
-Navigator tips and tricks and editor within Projucer.
+These notes outline the key actions and concepts covered in "Part 2 - Manage your Projucer Projects" of the Projucer tutorials. The focus is on working with an existing Projucer project (GUI_Project from Part 1) and exploring various project management aspects.
 
-Definition of Groups vs Folders. 
+## Key Points
 
-Moved warning into TIPS & WARNING doc in main folder. 
+- **Opening Projects:**
+  - Reviewed the process of opening projects within Projucer.
 
-Explored modules in Projucer made note in warnings for removing modules and what broken links look like. 
+- **Navigator and Editor:**
+  - Explored tips and tricks for the Navigator and the Projucer editor.
 
-Created and deleted Android exporter
+- **Groups vs Folders:**
+  - Clarified the distinction between Groups and Folders in Projucer.
 
-Duplicated Debug and Release builds in Exporters for Visual Studio 2022
+- **Organizational Changes:**
+  - Moved warnings to the "TIPS & WARNING" document in the main folder for better organization.
 
-Renamed them to Debug32 and Release32 then changed the architecture to 32-bit Win.
+- **Module Exploration:**
+  - Explored modules in Projucer, including warnings for removing modules and recognizing broken links.
+
+- **Exporter Operations:**
+  - Created and deleted an Android exporter.
+  - Duplicated Debug and Release builds in Exporters for Visual Studio 2022.
+
+- **Build Customization:**
+  - Renamed duplicated builds to Debug32 and Release32, adjusting the architecture to 32-bit Win.
