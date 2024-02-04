@@ -1,0 +1,17 @@
+Followed the initial tutorial and got the new project created.
+
+Got the new project launched in VS22
+
+Was unable to get the project to successfully build
+    
+    -Issues:
+
+        ProJucer Settings needed to be set to have the tick box for VST3 & Standalone checked in Plugin Formats
+
+        Once Standalone was added to the project you need to modify the "Startup Project" In vs22 to use StandalonePlugin and not the default VST3
+            -To do this you right click on the Solution "ProjectName" at the top of the solution explorer and select properties
+            -Select "ProjectName"_StandalonePlugin under Single startup project in the Startup Project section of the Common Properties 
+
+Solution found here: https://forum.juce.com/t/error-message-is-not-a-valid-win32-application-on-audio-application-project/29272/7 
+
+As mentioned by xenakios "The project needs to be set as the “startup project” in Visual Studio in that case but I think Projucer sets that automatically when the standalone application wrapper is added into the build configuration."
