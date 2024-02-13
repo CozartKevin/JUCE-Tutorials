@@ -18,4 +18,9 @@ As mentioned by xenakios "The project needs to be set as the â€œstartup projectâ
 
 
 More confusion on the tutorial description.  In "Set up plug-in debugging (Optional) the "To access the host go to" means that the projucer project that contains the Plug-In Host is in the default install location where you have JUCE located.  for me it was in F:\Juce Library\JUCE
-There was confusion as I didn't inference what they meant with just the pathing. After figuring out where to find the plug-in host the rest fell into place. 
+There was confusion as I didn't inference what they meant with just the pathing.
+
+Next issue is when you run/debug the PlugInHost and select the vst3 from the tutorial project it loads to 7% and hits a breakpoint about JUCE_ASSERT_MESSAGE_THREAD 
+    FIX: Seems removing one of the default VST3 Plugin paths solves the crash. 
+        -Wanted to add the original path however I am unable to get the path to come back to run further tests after removing.   I am going to assume that the path was the "C:\Program Files\Common Files\VST3 as discussed in the tutorial. 
+
