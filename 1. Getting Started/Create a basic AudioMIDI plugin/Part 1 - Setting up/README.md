@@ -15,3 +15,7 @@ Was unable to get the project to successfully build
 Solution found here: https://forum.juce.com/t/error-message-is-not-a-valid-win32-application-on-audio-application-project/29272/7 
 
 As mentioned by xenakios "The project needs to be set as the “startup project” in Visual Studio in that case but I think Projucer sets that automatically when the standalone application wrapper is added into the build configuration."
+
+
+More confusion on the tutorial description.  In "Set up plug-in debugging (Optional) the "To access the host go to" means that the projucer project that contains the Plug-In Host is in the default install location where you have JUCE located.  for me it was in F:\Juce Library\JUCE
+There was confusion as I didn't inference what they meant with just the pathing. After figuring out where to find the plug-in host the rest fell into place. 
