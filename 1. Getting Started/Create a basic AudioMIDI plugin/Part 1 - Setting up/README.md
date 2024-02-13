@@ -24,3 +24,4 @@ Next issue is when you run/debug the PlugInHost and select the vst3 from the tut
     FIX: Seems removing one of the default VST3 Plugin paths solves the crash. 
         -Wanted to add the original path however I am unable to get the path to come back to run further tests after removing.   I am going to assume that the path was the "C:\Program Files\Common Files\VST3 as discussed in the tutorial. 
 
+Took some fiddling and I had to change the overall Project debug settings outlined above as a fix back to "Current Selection' Then select properties on VST3 and select the Exe from Plugin host in the Juce folder. 
