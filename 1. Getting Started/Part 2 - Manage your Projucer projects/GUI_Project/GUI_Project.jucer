@@ -16,6 +16,8 @@
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="GUI_Project"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="GUI_Project"/>
+        <CONFIGURATION isDebug="1" name="Debug32" targetName="GUI_Project" winArchitecture="Win32"/>
+        <CONFIGURATION isDebug="0" name="Release32" targetName="GUI_Project" winArchitecture="Win32"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../../../Juice Library/modules"/>
