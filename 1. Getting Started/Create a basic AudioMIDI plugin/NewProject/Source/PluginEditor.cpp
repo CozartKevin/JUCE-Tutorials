@@ -25,6 +25,8 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
     midiVolume.setValue(1.0);
 
     addAndMakeVisible(&midiVolume);
+
+    midiVolume.addListener(this);
 }
 
 NewProjectAudioProcessorEditor::~NewProjectAudioProcessorEditor()
@@ -47,4 +49,8 @@ void NewProjectAudioProcessorEditor::resized()
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
     midiVolume.setBounds(40, 30, 20, getHeight() - 60);
+}
+
+void NewProjectAudioProcessorEditor::sliderValueChanged(juce::Slider* slider) {
+    audioProcessor.noteOnVel = midiVolume.getValue();
 }

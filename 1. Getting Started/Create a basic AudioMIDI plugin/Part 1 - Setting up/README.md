@@ -1,27 +1,54 @@
-Followed the initial tutorial and got the new project created.
+# Projucer Tutorials - Part 1: Setting Up a Basic Audio/MIDI Plugin
 
-Got the new project launched in VS22
+## Summary
 
-Was unable to get the project to successfully build
-    
-    -Issues:
+This section documents the initial steps taken in "Part 1 - Setting Up a Basic Audio/MIDI Plugin." It emphasizes creating a new Projucer project, launching it in Visual Studio 2022, and exploring project files.
 
-        ProJucer Settings needed to be set to have the tick box for VST3 & Standalone checked in Plugin Formats
+## Key Points
 
-        Once Standalone was added to the project you need to modify the "Startup Project" In vs22 to use StandalonePlugin and not the default VST3
-            -To do this you right click on the Solution "ProjectName" at the top of the solution explorer and select properties
-            -Select "ProjectName"_StandalonePlugin under Single startup project in the Startup Project section of the Common Properties 
+- **New Projucer Project:**
+  - Followed tutorial instructions to create a new Projucer project.
 
-Solution found here: https://forum.juce.com/t/error-message-is-not-a-valid-win32-application-on-audio-application-project/29272/7 
+- **Target IDE:**
+  - Set the target IDE to Visual Studio 2022.
 
-As mentioned by xenakios "The project needs to be set as the “startup project” in Visual Studio in that case but I think Projucer sets that automatically when the standalone application wrapper is added into the build configuration."
+- **Project Launch:**
+  - Successfully launched the project using the provided directions.
 
+- **Opening via .jucer File:**
+  - Opened the project using the .jucer file.
 
-More confusion on the tutorial description.  In "Set up plug-in debugging (Optional) the "To access the host go to" means that the projucer project that contains the Plug-In Host is in the default install location where you have JUCE located.  for me it was in F:\Juce Library\JUCE
-There was confusion as I didn't inference what they meant with just the pathing.
+- **PIP File Creation:**
+  - Created a generic PIP file to understand its structure, addressing the absence of PIP files.
 
-Next issue is when you run/debug the PlugInHost and select the vst3 from the tutorial project it loads to 7% and hits a breakpoint about JUCE_ASSERT_MESSAGE_THREAD 
-    FIX: Seems removing one of the default VST3 Plugin paths solves the crash. 
-        -Wanted to add the original path however I am unable to get the path to come back to run further tests after removing.   I am going to assume that the path was the "C:\Program Files\Common Files\VST3 as discussed in the tutorial. 
+- **Documentation Tracking:**
+  - Established a "Terms" document in the main folder to track new information, especially concerning PIP files.
 
-Took some fiddling and I had to change the overall Project debug settings outlined above as a fix back to "Current Selection' Then select properties on VST3 and select the Exe from Plugin host in the Juce folder. 
+- **Understanding PIP Files:**
+  - Referenced the website, clarifying that PIP files are header files with the .h extension. They provide metadata to the Projucer for automatic project creation with correct modules and exporters.
+
+- **Project Continuation:**
+  - Moved GUI_Project files to Part 2 for the tutorial's continuation. (Note: Continued in Part 2)
+
+## Follow-up Actions
+
+- **Build Issues:**
+  - Encountered issues with the project build, needing adjustments in ProJucer Settings. VST3 & Standalone checkboxes needed to be enabled in Plugin Formats.
+
+  - Set the "Startup Project" in VS22 to use StandalonePlugin instead of the default VST3. This resolved the "not a valid Win32 application" error.
+
+    - To set the startup project in Visual Studio, right-click on the solution in the Solution Explorer, choose properties, and under Common Properties, select "ProjectName"_StandalonePlugin as the Single startup project.
+
+  - Referenced solution: [Forum Discussion](https://forum.juce.com/t/error-message-is-not-a-valid-win32-application-on-audio-application-project/29272/7)
+
+- **Plug-In Debugging Setup:**
+  - Experienced confusion in locating the Plug-In Host mentioned in the tutorial. Found it in the default install location of JUCE.
+
+- **Plug-In Host Debugging Issues:**
+  - Encountered a breakpoint about JUCE_ASSERT_MESSAGE_THREAD when loading the VST3 in the PlugInHost.
+  
+    - Fix: Removing one of the default VST3 Plugin paths solved the crash. The original path assumed to be "C:\Program Files\Common Files\VST3" as discussed in the tutorial.
+
+  - Adjusted project debug settings to resolve the crash, setting back to "Current Selection" and selecting the Plugin Host in the JUCE folder as the executable.
+
+These adjustments ensure a smoother setup for developing a basic Audio/MIDI plugin with JUCE.
